@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft.h                                               :+:      :+:    :+:   */
+/*   ft_boolean.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lsquarci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/14 13:54:53 by lsquarci          #+#    #+#             */
-/*   Updated: 2023/11/15 17:31:56 by lsquarci         ###   ########.fr       */
+/*   Created: 2023/11/14 14:34:43 by lsquarci          #+#    #+#             */
+/*   Updated: 2023/11/14 15:35:42 by lsquarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_H
-# define FT_H
+#include <unistd.h>
 
-void	ft_putchar(char c);
-void	ft_swap(int *a, int *b);
-void	ft_putstr(char *str);
-int		ft_strlen(char *str);
-int		ft_strcmp(char *s1, char *s2);
+typedef int	t_bool;
+#define TRUE 1
+#define FALSE 0
 
-#endif
+#define EVEN(x) ((x) % 2 == 0)
+#define EVEN_MSG "I have an even number of arguments.\n"
+#define ODD_MSG "I have an odd number of arguments.\n"
+#define SUCCESS 0
